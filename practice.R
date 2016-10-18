@@ -1,7 +1,9 @@
 #What: Software Carpentry Workshop
 #When: October 18th, 2016
 #Who: Nicholas Medina
+#Where: Hatcher Library, UM
 
+#Packages necessary for this analysis
 install.packages(c('RSQLite', 'dplyr', 'tidyr', 'ggplot2'))
 library(RSQLite)
 conn = dbConnect(SQLite(), dbname='/Users/NicholasMedina/Desktop/survey.sqlite') #import db
