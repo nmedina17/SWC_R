@@ -49,6 +49,7 @@ surveys$taxa = ordered(surveys$taxa, levels = c('Rodent', 'Bird', 'Rabbit', 'Rep
 table(surveys$year, surveys$taxa)
 with(surveys, table(year, taxa))
 
+#Disconnecting from database clears up workspace/RAM
 dbDisconnect(conn)
 rm(conn)
 order(surveys$weight) #ordered indices
