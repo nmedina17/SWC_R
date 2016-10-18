@@ -3,9 +3,13 @@
 #Who: Nicholas Medina
 #Where: Hatcher Library, UM
 
+#######################################################################
+
 #Packages necessary for this analysis
 install.packages(c('RSQLite', 'dplyr', 'tidyr', 'ggplot2'))
 library(RSQLite)
+
+#This connects to database exported from sqlite3
 conn = dbConnect(SQLite(), dbname='/Users/NicholasMedina/Desktop/survey.sqlite') #import db
 tables = dbListTables(conn)
 tables
