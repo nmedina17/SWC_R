@@ -20,7 +20,7 @@ summary(surveys)
 surveys = dbGetQuery(conn, 'SELECT * FROM surveys
                      JOIN species ON surveys.species_id = species.species_id
                      JOIN plots ON surveys.plot_id = plots.plot_id;')
-#join requires common column
+#JOIN requires common column
 
 surveys = read.csv('/Users/NicholasMedina/Desktop/ecology.csv')
 #lists can hold multiple data types & col/vector lengths
