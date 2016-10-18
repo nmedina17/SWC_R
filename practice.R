@@ -27,6 +27,7 @@ surveys = read.csv('/Users/NicholasMedina/Desktop/ecology.csv')
 #data frame is a list of vectors
 str(surveys)
 
+# Different ways to subset from dataset
 class(surveys$year) # $ gives a vector
 head(surveys$year)
 
