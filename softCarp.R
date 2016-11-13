@@ -1,4 +1,4 @@
-ADDING HERE TO PRACTICE
+ADDING HERE TO PRACTICE!
 install.packages(c('RSQLite', 'dplyr', 'tidyr', 'ggplot2'))
 library(RSQLite)
 conn = dbConnect(SQLite(), dbname='/Users/NicholasMedina/Desktop/survey.sqlite') #import db
